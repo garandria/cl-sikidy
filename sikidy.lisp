@@ -44,3 +44,23 @@
 	(list nil nil nil nil nil nil nil nil)
 	(list nil nil nil nil nil nil nil nil)
 	(list nil nil nil nil nil nil nil nil)))
+
+(defparameter *anarana*
+  (list
+   'bilady	(list 'reny	'mitsangana	0)
+   'fahatelo	(list 'reny	'mitsangana	1)
+   'maly	(list 'reny	'mitsangana	2)
+   'tale	(list 'reny	'mitsangana	3)
+   'fianahana	(list 'reny	'mitsilany	0)
+   'abily	(list 'reny	'mitsilany	1)
+   'alisay	(list 'reny	'mitsilany	2)
+   'fahavalo	(list 'reny	'mitsilany	3)
+   'fahasivy	(list 'zanaka	'mitsangana	0)
+   'ombiasy	(list 'zanaka	'mitsangana	1)
+   'haja	(list 'zanaka	'mitsangana	2)
+   'haky	(list 'zanaka	'mitsangana	3)
+   'asorità	(list 'zanaka	'mitsangana	4)
+   'saily	(list 'zanaka	'mitsangana	5)
+   'safary	(list 'zanaka	'mitsangana	6)
+   'kiba	(list 'zanaka	'mitsangana	7)))
+
