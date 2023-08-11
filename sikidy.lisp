@@ -90,3 +90,20 @@
   (mapcar #'(lambda (x y) (if (= x 1) (if (= y 2) x (+ x y)) y))
 	  tokon-tsikidy1 tokon-tsikidy2))
 
+
+(defun asehoy ()
+  (labels ((sorato (tokonana)
+	     (mapcar #'(lambda (x)
+			 (if (null x) " _ "
+			     (case x
+			       (1 " • ")
+			       (t "• •"))))
+		     tokonana)))
+    (loop for andalana in *renin-tsikidy*
+	  do (format t "~a~{~A~^   ~}~%"
+		     (make-string 12 :initial-element #\Space)
+		     (sorato andalana)))
+    (format t "~%")
+    (loop for andalana in *zanan-tsikidy*
+	  do (format t "~{~A~^   ~}~%" (sorato andalana)))))
+
