@@ -79,3 +79,14 @@
     (reny *renin-tsikidy*)
     (zanaka *zanan-tsikidy*)))
 
+
+(defun atambaro (tokon-tsikidy1 tokon-tsikidy2)
+  " Operations
+       |  •  | • •
+   ----+-----+----
+    •  | • • |  •
+   • • |  •  | • •
+"
+  (mapcar #'(lambda (x y) (if (= x 1) (if (= y 2) x (+ x y)) y))
+	  tokon-tsikidy1 tokon-tsikidy2))
+
