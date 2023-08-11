@@ -107,3 +107,11 @@
     (loop for andalana in *zanan-tsikidy*
 	  do (format t "~{~A~^   ~}~%" (sorato andalana)))))
 
+
+(defun atokony (tokon-tsikidy anatiny)
+  (case (fipetraka tokon-tsikidy)
+    (mitsilany nil) ;; tsy azo atokona ny tokon-tsikidy mitsilany
+    (mitsangana    (loop for andalana in (toerana-tenany tokon-tsikidy)
+			 for atiny in anatiny
+			 do (setf (elt andalana (laharana tokon-tsikidy)) atiny)))))
+
