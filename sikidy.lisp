@@ -122,3 +122,19 @@
     (mitsangana (loop for andalana in (toerana-tenany tokon-tsikidy)
 		      collect (elt andalana (laharana tokon-tsikidy))))))
 
+
+(defmacro ohatra ()
+  `(progn
+     (atokony 'tale '(1 1 1 1))
+     (atokony 'maly '(1 1 2 2))
+     (atokony 'fahatelo '(2 2 2 1))
+     (atokony 'bilady '(1 1 2 2))
+     (atokony 'fahasivy (atambaro (omeo 'alisay) (omeo 'fahavalo)))
+     (atokony 'haja (atambaro (omeo 'fianahana) (omeo 'abily)))
+     (atokony 'asorità (atambaro (omeo 'fahatelo) (omeo'bilady)))
+     (atokony 'safary (atambaro (omeo 'tale) (omeo 'maly)))
+     (atokony 'ombiasy (atambaro (omeo 'fahasivy) (omeo 'haja)))
+     (atokony 'saily (atambaro (omeo 'asorità) (omeo 'safary)))
+     (atokony 'haky (atambaro (omeo 'ombiasy) (omeo 'saily)))
+     (atokony 'kiba (atambaro (omeo 'haky) (omeo 'tale)))
+     (asehoy)))
