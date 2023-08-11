@@ -64,3 +64,18 @@
    'safary	(list 'zanaka	'mitsangana	6)
    'kiba	(list 'zanaka	'mitsangana	7)))
 
+
+(defmacro toerana (tokon-tsikidy)
+  `(car (getf *anarana* ,tokon-tsikidy)))
+
+(defmacro fipetraka (tokon-tsikidy)
+  `(cadr (getf *anarana* ,tokon-tsikidy)))
+
+(defmacro laharana (tokon-tsikidy)
+  `(caddr (getf *anarana* ,tokon-tsikidy)))
+
+(defun toerana-tenany (tokon-tsikidy)
+  (case (toerana tokon-tsikidy)
+    (reny *renin-tsikidy*)
+    (zanaka *zanan-tsikidy*)))
+
