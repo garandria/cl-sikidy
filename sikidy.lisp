@@ -31,3 +31,16 @@
 ;; p15	(p1 + p2)	-- safary
 ;; p16	(p12 + p1)	-- kiba
 ;; -------------------------------------
+
+
+(defparameter *renin-tsikidy*
+  (list (list nil nil nil nil)
+	(list nil nil nil nil)
+	(list nil nil nil nil)
+	(list nil nil nil nil)))
+
+(defparameter *zanan-tsikidy*
+  (list (list nil nil nil nil nil nil nil nil)
+	(list nil nil nil nil nil nil nil nil)
+	(list nil nil nil nil nil nil nil nil)
+	(list nil nil nil nil nil nil nil nil)))
