@@ -115,3 +115,10 @@
 			 for atiny in anatiny
 			 do (setf (elt andalana (laharana tokon-tsikidy)) atiny)))))
 
+
+(defun omeo (tokon-tsikidy)
+  (case (fipetraka tokon-tsikidy)
+    (mitsilany (elt (toerana-tenany tokon-tsikidy) (laharana tokon-tsikidy)))
+    (mitsangana (loop for andalana in (toerana-tenany tokon-tsikidy)
+		      collect (elt andalana (laharana tokon-tsikidy))))))
+
