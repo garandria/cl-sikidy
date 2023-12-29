@@ -93,11 +93,7 @@
 
 (defun asehoy ()
   (labels ((sorato (tokonana)
-	     (mapcar #'(lambda (x)
-			 (if (null x) " _ "
-			     (case x
-			       (1 " • ")
-			       (t "• •"))))
+	     (mapcar #'(lambda (x) (if (null x) " _ " (case x (1 " • ") (t "• •"))))
 		     tokonana)))
     (loop for andalana in *renin-tsikidy*
 	  do (format t "~a~{~A~^   ~}~%"
