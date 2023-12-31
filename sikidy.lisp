@@ -119,12 +119,15 @@
 		      collect (elt andalana (laharana tokon-tsikidy))))))
 
 
+(defun mangala ()
+  (loop repeat 4 collect (1+ (random 2))))
+
 (defmacro ohatra ()
   `(progn
-     (atokony 'tale '(1 1 1 1))
-     (atokony 'maly '(1 1 2 2))
-     (atokony 'fahatelo '(2 2 2 1))
-     (atokony 'bilady '(1 1 2 2))
+     (atokony 'tale (mangala))
+     (atokony 'maly (mangala))
+     (atokony 'fahatelo (mangala))
+     (atokony 'bilady (mangala))
      (atokony 'fahasivy (atambaro (omeo 'alisay) (omeo 'fahavalo)))
      (atokony 'haja (atambaro (omeo 'fianahana) (omeo 'abily)))
      (atokony 'asorità (atambaro (omeo 'fahatelo) (omeo'bilady)))
